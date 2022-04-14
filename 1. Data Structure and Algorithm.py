@@ -33,7 +33,7 @@ RAM = CPU + Memory + 기본연산 # 단위시간에 수행되는 연산
 - 산술연산 : +. -, *, / : 1(일) 시간
 # %, 버림, 올림, 반올림 : RAM model 에서 기본연산으로 정의되지 않는다
 - 비교연산 : >, >=, <, <=, ==, != # A < B | = | A - B < 0
-- 논리연산 : AND, OR, Not
+- 논리연산 : AND, OR, NOT
 - 비트연산 : bit-AND, OR, NOR
 
 Pseudo/Virtual Language (가상언어) # RAM 에서 제공하는 기본연산이 표현가능 / 제어 기능 제공
@@ -46,7 +46,7 @@ Pseudo Code (가상코드)
 예시) algorithm ArrayMax(A,n) # algorithm ArrayMax 라는 이름의 가상코드를 기술 / (A,n) : 입력
 input : n개의 정수를 갖는 배열 A / output : A의 수중에서 최대값 리턴
 currentMax = A[0] # 기본연산 1회
-for i = 1 to n - 1 doc # ㅕ를 증가시키며 대입연산 수행 
+for i = 1 to n - 1 doc # i 를 증가시키며 대입연산 수행 
 # c : for(i=1; i<n,; i++) / python : for i in range(1,n)
     if currentMax < A[i]
         currentMax = A[i]
